@@ -22,4 +22,4 @@ test:
 	pytest test
 
 requirements:
-	pip install -Ur requirements.txt
+	pip install pytest flake8
