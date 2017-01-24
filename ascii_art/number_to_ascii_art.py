@@ -82,16 +82,16 @@ def single_number_representation(single_number):
 
 def transpose_lines(single_number_representations):
     zipped = zip(*single_number_representations)
-    as_list = list(map(list, list(zipped)))
-    return as_list
+    return [list(line) for line in zipped]
 
 
 def join_columns(transposed_lines):
-    return list(map(lambda column: "  ".join(column), transposed_lines))
+    return ["  ".join(column) for column in transposed_lines]
 
 
 def number_to_ascii_art(number):
     numbers = split_large_numbers(number)
-    numbers_representations = list(map(single_number_representation, numbers))
+    numbers_representations = [single_number_representation(number)
+                               for number in numbers]
     transposed_lines = transpose_lines(numbers_representations)
     return join_columns(transposed_lines)
