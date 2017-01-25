@@ -35,3 +35,9 @@ number_to_ascii_art(235) == [
     '###  ###  ###'
 ]
 ```
+
+Voir aussi :
+
+- [Number to LCD kata](https://vimeo.com/7076109), video by Corey Haines
+- [Kata repository for Number To LCD](https://github.com/coreyhaines/kata-number-to-led/tree/reference_implementation), code by Corey Haines
+- <http://rubyquiz.com/quiz14.html>
